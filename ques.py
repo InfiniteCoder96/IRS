@@ -22,7 +22,14 @@ class QA:
   def qa_func(self, question :str):
     paragraph = ''' Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
     Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.Yes Honey should not be consumed with warm substances and I appreciate all the answers given.
-    I recommend the article described the reason for Ayurvedic Classic for not using honey with warm substances which also proven by modern scientific research. '''
+    I recommend the article described the reason for Ayurvedic Classic for not using honey with warm substances which also proven by modern scientific research. As per Ayurveda, Oja is the Bala (~immunity) which is originated 
+    by the Ahara which further nourishes Rasa, Rakta etc Dhatu and Finally it converted in Oja. Andrographis paniculata (Kalmegh) has been used since centuries for the treatment of various diseases. It is a great benefit to the
+     Unani, Ayurveda, Homeopathy and household treatment. The chemical components present in it are Andrographolite, neoandrographolite, and 
+    deoxyandrographlide. The derivatives of it are andrographiside, andropanoside, andrographin and panicolin. Ayurveda, TM of India, advises to avoid Curd intake in diseases that have Kapha dosha predominance like Diabetes, Respiratory
+     problems; in diseases arising out of Raktha dusti (Blood tissue vitiation) like Skin diseases and also in conditions where the digestive fire (Agni) is weak like during Night time. Regarding this Curd advisory, Ayurveda has very clear
+    fundamental concepts and the findings of which have also been noticed in clinical practice as well. A Traditional formulation (in particular to Ayurveda system of medicine which i dealt with )may contain a single herb, multi herb combination,
+    herbo mineral preparation containing herb and metal/mineral, herb- metal/ mineral- animal product, herb- animal product containing formulations. Sir, the paper just mentions 'The human dose of Ghrita as practiced traditionally is approximately
+    10 g per person', without reference.'''
                 
     encoding = tokenizer.encode_plus(text=question,text_pair=paragraph, add_special=True)
 
