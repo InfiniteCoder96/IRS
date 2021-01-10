@@ -20,14 +20,21 @@ tokenizer = BertTokenizer.from_pretrained('bert-large-uncased-whole-word-masking
 class QA:
 
   def qa_func(self, question :str):
-    paragraph = '''Coronavirus disease (COVID19) is an infectious disease caused by a newly discovered coronavirus. Yes Honey should not be consumed with warm substances and I appreciate all the answers given.
-Oja is the Bala (~immunity) which is originated by the Ahara which further nourishes Rasa, Rakta etc Dhatu and Finally it converted in Oja. 
-Andrographis paniculata (Kalmegh) has been used since centuries for the treatment of various diseases. 
- A Traditional formulation (in particular to Ayurveda system of medicine which i dealt with )may contain a single herb, multi herb combination,  herbo mineral preparation containing herb and metal/mineral, herb- metal/ mineral- animal product, herb- animal product containing formulations. 
-The human dose of Ghrita as practiced traditionally is approximately 10 g per person. "AYURVEDA" is made up of two words-Ayuh and Veda. Ayuh means life and Veda means knowledge or science. Thus "AYURVEDA' in totality means ‘Science of life'. 
-     as human body are made up of five basic elements colectively called ‘Panch Mahabhootas'. These are Aakash (Ether), Vayu (Air), Agni(Fire), Aapa (Water) and Prithvi (Earth). The sixth mandatory component of life is Atma (life spirit) without which life   ceases. The human body is made up of Doshas (Bio-humours), Dhatus(Body matrix) and Malas (excretable products). Vata, Pitta and kapha, known as Tridoshs are physiological entities of the body which are responsible for carrying out all the functions of the body. Dhatus are the structural entities of thebody. These are Rasa (Plasma), Rakta (Blood cells), Mamsa (Muscular tissue), Meda (Fatty tissue), Asthi (Bony tissue), Majja (Bone marrow) and Shukra (Hormonal and other secretions of genital).
-       Agni (Metabolic fire) is in thirteen different forms and carries out the whole metabolism of the body. The waste products of the body which are excretable are produced in the body as bye-products of metabolism. These are known as malas which include pureesh (faeces), Sweda (sweat) and Mutra (urine). All biotransformations within the body occur through Srotases (body channels) which are the sites for action of agni. As per Ayurveda, ‘Health' is a state of equilibrium of normal functions 
-       of doshas, Dhatus, malas and Agni with delighted body, mind and soul.'''
+    paragraph = '''Coronavirus disease (COVID19) is an infectious disease caused by a newly discovered coronavirus. Yes Honey should not be
+    consumed with warm substances and I appreciate all the answers given. Oja is the Bala (~immunity) which is originated by the Ahara which
+    further nourishes Rasa, Rakta etc Dhatu and Finally it converted in Oja. Andrographis paniculata (Kalmegh) has been used since centuries
+    for the treatment of various diseases. The human dose of Ghrita as practiced traditionally is approximately 10 g per person. "AYURVEDA" 
+    is made up of two words-Ayuh and Veda. Ayuh means life and Veda means knowledge or science. Thus "AYURVEDA' in totality means ‘Science 
+    of life'. as human body are made up of five basic elements colectively called ‘Panch Mahabhootas'. These are Aakash (Ether), Vayu (Air),
+    Agni(Fire), Aapa (Water) and Prithvi (Earth). The sixth mandatory component of life is Atma (life spirit) without which life ceases. 
+    The human body is made up of Doshas (Bio-humours), Dhatus(Body matrix) and Malas (excretable products). Vata, Pitta and kapha, known as
+    Tridoshs are physiological entities of the body which are responsible for carrying out all the functions of the body. Dhatus are the 
+    structural entities of thebody. These are Rasa (Plasma), Rakta (Blood cells), Mamsa (Muscular tissue), Meda (Fatty tissue), Asthi 
+    (Bony tissue), Majja (Bone marrow) and Shukra (Hormonal and other secretions of genital).Agni (Metabolic fire) is in thirteen different
+    forms and carries out the whole metabolism of the body. The waste products of the body which are excretable are produced in the body as
+    bye-products of metabolism. These are known as malas which include pureesh (faeces), Sweda (sweat) and Mutra (urine). 
+    All biotransformations within the body occur through Srotases (body channels) which are the sites for action of agni. As per Ayurveda,
+    ‘Health' is a state of equilibrium of normal functions of doshas, Dhatus, malas and Agni with delighted body, mind and soul.'''
                 
     encoding = tokenizer.encode_plus(text=question,text_pair=paragraph, add_special=True)
 
